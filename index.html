@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Gorim</title>
 </head>
 <body>
     <div class="header">
@@ -12,27 +12,92 @@
     </div>
     <div class="menu">
         <menu>
-            <a href="#um"><li>personagens</li></a>
-            <a href="#dois"><li>mundo</li></a>
-            <a href="#"><li>etapas</li></a>
-            <a href="#"><li>eleições</li></a>
+            <a href="#um"><li>introdução</li></a>
+            <a href="#dois"><li>rodadas</li></a>
+            <a href="#"><li>personagens</li></a>
+            <!-- <a href="#"><li>eleições</li></a> -->
             <a href="#"><li>objetivos</li></a>
-            <a href="#"><li>poluição</li></a>
+            <!-- <a href="#"><li>poluição</li></a> -->
         </menu>
     </div>
     <div class="conteudo">
     <main>
         <article>
-            <h2 id="um">TÍTULO</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cum deserunt tempore repudiandae harum eius. Delectus optio exercitationem corrupti ratione? Distinctio doloribus reiciendis quam veniam impedit cupiditate esse tempore minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cum deserunt tempore repudiandae harum eius. Delectus optio exercitationem corrupti ratione? Distinctio doloribus reiciendis quam veniam impedit cupiditate esse tempore minus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cum deserunt tempore repudiandae harum eius. Delectus optio exercitationem corrupti ratione? Distinctio doloribus reiciendis quam veniam impedit cupiditate esse tempore minus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cum deserunt tempore repudiandae harum eius. Delectus optio exercitationem corrupti ratione? Distinctio doloribus reiciendis quam veniam impedit cupiditate esse tempore minus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cum deserunt tempore repudiandae harum eius. Delectus optio exercitationem corrupti ratione? Distinctio doloribus reiciendis quam veniam impedit cupiditate esse tempore minus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cum deserunt tempore repudiandae harum eius. Delectus optio exercitationem corrupti ratione? Distinctio doloribus reiciendis quam veniam impedit cupiditate esse tempore minus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cum deserunt tempore repudiandae harum eius. Delectus optio exercitationem corrupti ratione? Distinctio doloribus reiciendis quam veniam impedit cupiditate esse tempore minus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cum deserunt tempore repudiandae harum eius. Delectus optio exercitationem corrupti ratione? Distinctio doloribus reiciendis quam veniam impedit cupiditate esse tempore minus.</p>
-            <h2 id="dois">TÍTULO #2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores impedit numquam optio facilis cumque veniam. Excepturi inventore quod totam? Ut repudiandae ducimus pariatur? A perspiciatis quos obcaecati, voluptate officiis soluta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sit nostrum ad praesentium itaque, accusamus, voluptas deserunt dolorem ratione maiores alias aut corrupti nulla facere. Nostrum impedit voluptates assumenda rerum?</p>
+            <h2 id="um">INTRODUÇÃO</h2>
+            <h4>Bem vindo ao Gorim!</h4>
+            <p>O Gorim é um RPG de mesa estratégico que simula o gerenciamento dos recursos hídricos do canal São Gonçalo e da Lagoa Mirim. Este jogo foi criado para provocar reflexões sobre a tomada de decisões ambientais e apoiar o Comitê de Gerenciamento das Bacias Hidrográficas, além de contribuir para a educação ambiental. No jogo Gorim, a dinâmica acontece em duas cidades fictícias: Atlantis e Cidadela.</p>
+            <ul>
+                <li>O jogo é jogado por pelo menos 6 pessoas, divididas em duas cidades: Atlantis e Cidadela.</li>
+                <li>Quatro jogadores assumem o papel de Empresários (Semente, Fertilizante, Máquinas ou Agrotóxico), enquanto os outros são Agricultores.</li>
+                <li>Os Empresários de Semente e Máquinas ficam em Atlantis, e os de Fertilizante e Agrotóxico ficam em Cidadela.</li>
+            </ul>
+            <p>Observe as interações entre as classes, planeje suas jogadas, negociações e ações para influenciar positivamente o resultado final.</p>
+            
+            <h2 id="dois">RODADAS</h2>
+            <p>
+                Cada rodada equivale a um ano e possui duas etapas: produtores e fiscalizadores/moderadores.
+            </p>
+            <p>
+                Na primeira etapa, Empresários e Agricultores interagem; na segunda, Fiscais, Prefeitos e Vereadores entram em cena. Haverá uma eleição a cada duas rodadas para cargos elegíveis (Fiscal, Prefeito e Vereador).
+            </p>
+            <div id="images_rodada">
+            <img src="assets/dinamicaRodada.png" alt="">
+            <img src="assets/dinamicaJogo.png" alt="">
+            </div>
+            <h2>PERSONAGENS</h2>
+            <h3>Agricultores</h3>
+            <p>No Gorim, o Agricultor desempenha um papel crucial na gestão ambiental e na produtividade agrícola. Ele é responsável por seis parcelas de terra e suas principais ações incluem:</p>
+            <h4>Plantio:</h4>
+            <ul>
+                <li>O Agricultor pode escolher plantar em todas ou algumas das seis parcelas de terra.</li>
+                <li>Em cada parcela, ele pode plantar diferentes produtos: sementes, utilizar fertilizantes, agrotóxicos ou máquinas. No entanto, <b>não é possível usar agrotóxico e máquina na mesma parcela, com exceção do Pulverizador</b>, que reduz pela metade a poluição daquela área.</li>
+                <li>Cada combinação de cultivo gera uma produtividade e impacto de poluição específicos.</li>
+            </ul>
+            <h4>Impacto nos Recursos Naturais:</h4>
+            <ul>
+                <li>As escolhas do Agricultor influenciam diretamente na produtividade das plantações e na poluição gerada, afetando o ambiente do jogo e as estratégias dos outros jogadores.</li>
+            </ul>
+            <p>Se o Agricultor optar por não utilizar agrotóxicos em uma parcela, recebe o <b>Selo Verde</b> do Fiscal Ambiental. Este selo concede um desconto de 5% no imposto sobre a produtividade dessa parcela.</p>
+            <figure>
+                <img src="assets/tabelaAgricultor.png" alt="" id="tabela">
+                <figcaption>Tabela contendo informações importantes para o Agricultor</figcaption>
+            </figure>
+            <h3>Empresários</h3>
+            <p>Os Empresários desempenham um papel central na economia do jogo, negociando, vendendo produtos e gerenciando sua produtividade. Existem quatro tipos de Empresários no Gorim:</p>
+            <ol>
+                <li>Empresário de Semente: Vende sementes de Hortaliça, Arroz ou Soja.</li>
+                <li>Empresário de Fertilizante: Oferece três tipos de produtos: Comum, Premium e Super Premium.</li>
+                <li>Empresário de Agrotóxico: Oferece três tipos de produtos: Comum, Premium e Super Premium.</li>
+                <li>Empresário de Máquinas: Aluga diferentes pacotes de máquinas (1, 2 ou 3) e um Pulverizador.</li>
+            </ol>
+            <p>Atividades dos Empresários:</p>
+            <h4>Negociação de Preços:</h4>
+            <ul>
+                <li>Negociam os preços de seus produtos com os Agricultores.</li>
+                <li>Podem vender os produtos por três faixas de preços: Baixo, Normal e Alto, com valores definidos para cada cliente.</li>
+            </ul>
+            <h4>Geração de Produtividade e Poluição:</h4>
+            <ul>
+                <li>Cada venda gera uma quantidade específica de poluição, simulando a fabricação dos produtos.</li>
+                <li>Todo o dinheiro arrecadado com as vendas retorna para o Empresário como produtividade, representando a quantidade adicional de moeda disponível para o próximo período de jogo.</li>
+            </ul>
+            <p>As estratégias de vendas e as relações com os Agricultores têm um impacto significativo na economia do jogo, influenciando a produtividade e as escolhas dos outros jogadores.</p>
+            <figure>
+                <img src="assets/tabelaEmpSementes.png" alt="" id="tabela">
+                <figcaption>Tabela Empresário de Sementes</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/tabelaEmpFertilizantes.png" alt="" id="tabela">
+                <figcaption>Tabela Empresário de Fertilizantes</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/tabelaEmpAgrotoxico.png" alt="" id="tabela">
+                <figcaption>Tabela Empresário de Agrotóxicos</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/tabelaEmpMaquinas.png" alt="" id="tabela">
+                <figcaption>Tabela Empresário de Máquinas</figcaption>
+            </figure>
         </article>
     </main>
     <aside>

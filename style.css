@@ -114,3 +114,32 @@ footer{
 aside li:hover{
     color: #FF9600;
 }
+
+p{
+    font-size: 15px;
+}
+
+li{
+    font-size: 15px;
+}
+
+img{
+    width: 25vw;
+}
+#images_rodada{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#tabela{
+    width: 50vw !important;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+figcaption{
+    font-size: 12px;
+}
