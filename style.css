@@ -224,4 +224,7 @@ ol #personagens{
     #tela{
         width: 80vw;
     }
+    article{
+        padding: 25px;
+    }
   }
