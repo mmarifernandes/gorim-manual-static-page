@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Gorim</title>
+    <script src="jquery.js"></script>
+    <script src='jquery.zoom.js'></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function(){
+            $('#dinamica').zoom({ on:'press' });
+        });
+    
+        // Using Colorbox with Zoom
+        // $(document).ready(function () {
+        //     $('a.photo').zoom({
+        //         url: 'photo-big.jpg',
+        //         callback: function () {
+        //             $(this).colorbox({ href: this.src });
+        //         }
+        //     });
+        // });
+    </script>
 </head>
 <body>
     <div class="header">
@@ -44,7 +62,9 @@
             <p>Na dinâmica do jogo Gorim, a eleição é um momento crucial que ocorre a cada <b>duas rodadas</b>, ou seja, a primeira eleição ocorrerá na 3ª rodada, e permite a escolha de jogadores para desempenhar papéis-chave no cenário do jogo. As eleições determinam quem ocupará os cargos elegíveis de Fiscal Ambiental, Prefeito e Vereador em cada cidade (Atlantis e Cidadela).</p>
             <div id="images_rodada">
             <img src="assets/dinamicaRodada.png" alt="">
+            <span id="dinamica">
             <img src="assets/dinamicaJogo.png" alt="">
+            </span>
             </div>
 
             <h2 id="transferencias">TRANSFERÊNCIAS</h2>
@@ -252,4 +272,5 @@
     © 2021 Gorim - Todos os direitos reservados.
 </footer>
 </body>
+
 </html>

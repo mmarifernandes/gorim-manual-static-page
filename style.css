@@ -134,6 +134,7 @@ li{
 
 img{
     width: 25vw;
+    height: 100%;
 }
 #images_rodada{
     display: flex;
