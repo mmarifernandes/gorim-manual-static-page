@@ -10,20 +10,21 @@
     <div class="header">
         <img src="assets/gorimLogo_v2.png" alt="" id="icon">
     </div>
-    <div class="menu">
+    <div class="menu" id="menu">
         <menu>
-            <a href="#um"><li>introdução</li></a>
-            <a href="#dois"><li>rodadas</li></a>
-            <a href="#"><li>personagens</li></a>
-            <!-- <a href="#"><li>eleições</li></a> -->
+            <a href="#intro"><li>introdução</li></a>
+            <a href="#rodadas"><li>rodadas</li></a>
+            <a href="#transferencias"><li>transferências</li></a>
+            <a href="#personagens"><li>personagens</li></a>
             <a href="#"><li>objetivos</li></a>
-            <!-- <a href="#"><li>poluição</li></a> -->
+            <!-- <a href="#"><li><b style="color: red">poluição</b></li></a> -->
         </menu>
     </div>
     <div class="conteudo">
+        <a href="#icon" id="button">Voltar ao início</a>
     <main>
         <article>
-            <h2 id="um">INTRODUÇÃO</h2>
+            <h2 id="intro">INTRODUÇÃO</h2>
             <h4>Bem vindo ao Gorim!</h4>
             <p>O Gorim é um RPG de mesa estratégico que simula o gerenciamento dos recursos hídricos do canal São Gonçalo e da Lagoa Mirim. Este jogo foi criado para provocar reflexões sobre a tomada de decisões ambientais e apoiar o Comitê de Gerenciamento das Bacias Hidrográficas, além de contribuir para a educação ambiental. No jogo Gorim, a dinâmica acontece em duas cidades fictícias: Atlantis e Cidadela.</p>
             <ul>
@@ -32,38 +33,65 @@
                 <li>Os Empresários de Semente e Máquinas ficam em Atlantis, e os de Fertilizante e Agrotóxico ficam em Cidadela.</li>
             </ul>
             <p>Observe as interações entre as classes, planeje suas jogadas, negociações e ações para influenciar positivamente o resultado final.</p>
+            <p style="background-color: rgb(184, 1, 1); color: white;">Atenção! Após fazer suas jogadas, comunique o mestre do jogo através do chat que você está pronto para ir para a próxima etapa!</p>
             
-            <h2 id="dois">RODADAS</h2>
+            <h2 id="rodadas">RODADAS</h2>
             <p>
                 Cada rodada equivale a um ano e possui duas etapas: produtores e fiscalizadores/moderadores.
+                Na primeira etapa, Empresários e Agricultores interagem; na segunda, Fiscais, Prefeitos e Vereadores entram em cena.
             </p>
-            <p>
-                Na primeira etapa, Empresários e Agricultores interagem; na segunda, Fiscais, Prefeitos e Vereadores entram em cena. Haverá uma eleição a cada duas rodadas para cargos elegíveis (Fiscal, Prefeito e Vereador).
-            </p>
+            <h3>Eleições</h3>
+            <p>Na dinâmica do jogo Gorim, a eleição é um momento crucial que ocorre a cada <b>duas rodadas</b>, ou seja, a primeira eleição ocorrerá na 3ª rodada, e permite a escolha de jogadores para desempenhar papéis-chave no cenário do jogo. As eleições determinam quem ocupará os cargos elegíveis de Fiscal Ambiental, Prefeito e Vereador em cada cidade (Atlantis e Cidadela).</p>
             <div id="images_rodada">
             <img src="assets/dinamicaRodada.png" alt="">
             <img src="assets/dinamicaJogo.png" alt="">
             </div>
-            <h2>PERSONAGENS</h2>
-            <h3>Agricultores</h3>
-            <p>No Gorim, o Agricultor desempenha um papel crucial na gestão ambiental e na produtividade agrícola. Ele é responsável por seis parcelas de terra e suas principais ações incluem:</p>
+
+            <h2 id="transferencias">TRANSFERÊNCIAS</h2>
+            <p>A transferência de dinheiro entre jogadores é uma mecânica que permite a movimentação de recursos financeiros entre os participantes. Essa possibilidade de transferência é uma ferramenta estratégica que pode ser utilizada para diversos fins ao longo do jogo, sendo alguns deles:</p>
+            <ul>
+                <li><b>Colaboração e Negociação:</b> Os jogadores podem optar por transferir dinheiro entre si para estabelecer acordos, firmar parcerias estratégicas ou resolver disputas, possibilitando a cooperação entre diferentes papéis no jogo.</li>
+                <li><b>Influência e Estratégia:</b> Essa mecânica permite que os jogadores influenciem as ações e estratégias uns dos outros, incentivando alianças estratégicas ou até mesmo o estabelecimento de rivalidades no jogo.</li>
+                <li><b>Auxílio e Suporte:</b> A transferência de dinheiro pode ser usada para apoiar outros jogadores em momentos de dificuldade financeira, favorecendo o equilíbrio de forças no jogo e promovendo a dinâmica cooperativa.</li>
+                <li><b>Tomada de Decisões Conjuntas:</b> Os recursos transferidos podem ser utilizados para alcançar objetivos compartilhados ou para colaborar na execução de estratégias que beneficiem múltiplos jogadores.</li>
+                <li><b>Estratégias de Poder:</b> Além da cooperação, a transferência de dinheiro também pode ser usada como uma ferramenta estratégica para exercer influência sobre outros jogadores, direcionando suas ações ou decisões.</li>
+            </ul>
+            <h2 id="personagens">PERSONAGENS</h2>
+
+
+            <h3 id="agricultores">Agricultores</h3>
+            <p>No Gorim, o Agricultor desempenha um papel crucial na gestão ambiental e na <b style="color: green;"></b>produtividade</b> agrícola. Ele é responsável por <b>seis parcelas de terra</b> e suas principais ações incluem:</p>
             <h4>Plantio:</h4>
             <ul>
                 <li>O Agricultor pode escolher plantar em todas ou algumas das seis parcelas de terra.</li>
-                <li>Em cada parcela, ele pode plantar diferentes produtos: sementes, utilizar fertilizantes, agrotóxicos ou máquinas. No entanto, <b>não é possível usar agrotóxico e máquina na mesma parcela, com exceção do Pulverizador</b>, que reduz pela metade a poluição daquela área.</li>
-                <li>Cada combinação de cultivo gera uma produtividade e impacto de poluição específicos.</li>
+                <li>Em cada parcela, ele pode plantar diferentes produtos: sementes, utilizar fertilizantes, agrotóxicos ou máquinas. No entanto, <b>não é possível usar agrotóxico e máquina na mesma parcela, com exceção do Pulverizador</b>, que reduz pela metade a <b style="color: red">poluição</b> daquela área.</li>
+                <li>Cada combinação de cultivo gera uma <b style="color: green;">produtividade</b> e impacto de<b style="color: red"> poluição</b> específicos.</li>
             </ul>
             <h4>Impacto nos Recursos Naturais:</h4>
             <ul>
-                <li>As escolhas do Agricultor influenciam diretamente na produtividade das plantações e na poluição gerada, afetando o ambiente do jogo e as estratégias dos outros jogadores.</li>
+                <li>As escolhas do Agricultor influenciam diretamente na <b style="color: green;">produtividade</b> das plantações e na <b style="color: red">poluição</b> gerada, afetando o ambiente do jogo e as estratégias dos outros jogadores.</li>
             </ul>
-            <p>Se o Agricultor optar por não utilizar agrotóxicos em uma parcela, recebe o <b>Selo Verde</b> do Fiscal Ambiental. Este selo concede um desconto de 5% no imposto sobre a produtividade dessa parcela.</p>
+            <p>Se o Agricultor optar por não utilizar agrotóxicos em uma parcela, recebe o <b>Selo Verde</b> do Fiscal Ambiental. Este selo concede um desconto de 5% no imposto sobre a <b style="color: green;">produtividade</b> dessa parcela.</p>
             <figure>
-                <img src="assets/tabelaAgricultor.png" alt="" id="tabela">
+                <img src="assets/telas_jogo/tela_agricultor.png" alt="" id="tela">
+                <figcaption>Interface do Agricultor</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/telas_jogo/tela_agricultor_orcamentos.png" alt="" id="tela">
+                <figcaption>Orçamentos recebidos pelo agricultor</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/telas_jogo/tela_agricultor_parcela.png" alt="" id="tela">
+                <figcaption>Configurações das parcelas de terra</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/tabelas/tabelaAgricultor.png" alt="" id="tabela">
                 <figcaption>Tabela contendo informações importantes para o Agricultor</figcaption>
             </figure>
-            <h3>Empresários</h3>
-            <p>Os Empresários desempenham um papel central na economia do jogo, negociando, vendendo produtos e gerenciando sua produtividade. Existem quatro tipos de Empresários no Gorim:</p>
+            
+            
+            <h3 id="empresarios">Empresários</h3>
+            <p>Os Empresários desempenham um papel central na economia do jogo, negociando, vendendo produtos e gerenciando sua <b style="color: green;">produtividade</b>. Existem quatro tipos de Empresários no Gorim:</p>
             <ol>
                 <li>Empresário de Semente: Vende sementes de Hortaliça, Arroz ou Soja.</li>
                 <li>Empresário de Fertilizante: Oferece três tipos de produtos: Comum, Premium e Super Premium.</li>
@@ -76,13 +104,13 @@
                 <li>Negociam os preços de seus produtos com os Agricultores.</li>
                 <li>Podem vender os produtos por três faixas de preços: Baixo, Normal e Alto, com valores definidos para cada cliente.</li>
             </ul>
-            <h4>Geração de Produtividade e Poluição:</h4>
+            <h4>Geração de <b style="color: green;">produtividade</b> e <b style="color: red">poluição</b>:</h4>
             <ul>
-                <li>Cada venda gera uma quantidade específica de poluição, simulando a fabricação dos produtos.</li>
-                <li>Todo o dinheiro arrecadado com as vendas retorna para o Empresário como produtividade, representando a quantidade adicional de moeda disponível para o próximo período de jogo.</li>
+                <li>Cada venda gera uma quantidade específica de <b style="color: red">poluição</b>, simulando a fabricação dos produtos.</li>
+                <li>Todo o dinheiro arrecadado com as vendas retorna para o Empresário como <b style="color: green;">produtividade</b>, representando a quantidade adicional de moeda disponível para o próximo período de jogo.</li>
             </ul>
-            <p>As estratégias de vendas e as relações com os Agricultores têm um impacto significativo na economia do jogo, influenciando a produtividade e as escolhas dos outros jogadores.</p>
-            <figure>
+            <p>As estratégias de vendas e as relações com os Agricultores têm um impacto significativo na economia do jogo, influenciando a <b style="color: green;">produtividade</b> e as escolhas dos outros jogadores.</p>
+            <!-- <figure>
                 <img src="assets/tabelaEmpSementes.png" alt="" id="tabela">
                 <figcaption>Tabela Empresário de Sementes</figcaption>
             </figure>
@@ -97,18 +125,126 @@
             <figure>
                 <img src="assets/tabelaEmpMaquinas.png" alt="" id="tabela">
                 <figcaption>Tabela Empresário de Máquinas</figcaption>
+            </figure> -->
+            <figure>
+                <img src="assets/telas_jogo/tela_empresarios.png" alt="" id="tela">
+                <figcaption style="text-align: center;">Interface do Empresário de Agrotóxicos, todos os empresários possuem uma interface similar, mudando apenas o produto vendido.</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/telas_jogo/tela_empresarios_orcamentos.png" alt="" id="tela">
+                <figcaption>Resposta dos orçamentos enviados pelo empresário</figcaption>
+            </figure>
+
+
+            <h3 id="prefeito">Prefeito</h3>
+            <p>O Prefeito é um dos agentes principais na tomada de decisões ambientais e políticas da cidade. Suas atividades incluem:</p>
+            <h4>Controle da Poluição Mundial:</h4>
+            <ul>
+                <li>Tem a responsabilidade de controlar a poluição mundial através de ações específicas.</li>
+                <li>Pode utilizar três diferentes ações ambientais: Tratamento de Água, Lixo e Esgoto, cada uma com um preço e impacto na poluição mundial.</li>
+            </ul>
+            <h4>Gestão de Impostos:</h4>
+            <ul>
+                <li>Tem o poder de aumentar ou diminuir o preço dos impostos, que são divididos em três tipos. Esses impostos têm diferentes taxas de preço para faixas de produtividade.</li>
+            </ul>
+            <h4>Aconselhamento e Estratégia:</h4>
+            <ul>
+                <li>Deve ouvir os Vereadores quanto a ideias de gestão, considerando e discutindo estratégias para o bem-estar da cidade.</li>
+                <li>Suas decisões afetam diretamente o cenário econômico e ambiental do jogo.</li>
+            </ul>
+            <p>Atenção, ao aceitar uma sugestão do Vereador ela não é aplicada automaticamente, você deverá aplicar manualmente.</p>
+            <figure>
+                <img src="assets/telas_jogo/tela_prefeito.png" alt="" id="tela">
+                <figcaption>Interface do prefeito</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/telas_jogo/tela_prefeito_acoes.png" alt="" id="tela">
+                <figcaption>Ações disponíveis</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/telas_jogo/tela_prefeito_orcamento.png" alt="" id="tela">
+                <figcaption>Sugestões recebidas</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/telas_jogo/tela_prefeito_historico.png" alt="" id="tela">
+                <figcaption>Histórico da etapa anterior</figcaption>
+            </figure>
+
+            <h3 id="vereador">Vereador</h3>
+            <p>O Vereador tem um papel fundamental na governança local, auxiliando o Prefeito na gestão da cidade. Suas atividades principais são:</p>
+            <h4>Apoio ao Prefeito:</h4>
+            <ul>
+                <li>Auxilia o Prefeito na análise dos impactos das ações tomadas e dos investimentos feitos.</li>
+                <li>Deve apresentar ideias e sugestões para a gestão da cidade, influenciando as decisões do Prefeito.</li>
+            </ul>
+            <h4>Comunicação com os Moradores:</h4>
+            <ul>
+                <li>Deve estar atento às necessidades e opiniões dos moradores da cidade.</li>
+                <li>Repassa informações relevantes ao Prefeito, refletindo as necessidades da população.</li>
+            </ul>
+            <figure>
+                <img src="assets/telas_jogo/tela_vereador.png" alt="" id="tela">
+                <figcaption>Interface do vereador</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/telas_jogo/tela_vereador_acoes.png" alt="" id="tela">
+                <figcaption>Ações disponíveis</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/telas_jogo/tela_vereador_sugestoes.png" alt="" id="tela">
+                <figcaption>Sugestões enviadas</figcaption>
+            </figure>
+
+            <h3 id="fiscal">Fiscal Ambiental</h3>
+            <p>O Fiscal Ambiental desempenha um papel crucial na regulação ambiental e na aplicação de multas. Suas atividades englobam:</p>
+            <h4>Análise e Fiscalização:</h4>
+            <ul>
+                <li>Analisa as jogadas dos atores da primeira etapa pertencentes à sua cidade.</li>
+                <li>Pode aplicar multas leves, médias, pesadas ou nenhuma, dependendo da situação e de acordos feitos com outros jogadores.</li>
+            </ul>
+            <h4>Controle da Poluição Local:</h4>
+            <ul>
+                <li>É responsável por dar ou retirar o Selo Verde das parcelas dos Agricultores.</li>
+                <li>Contribui para o controle da poluição local e para as estratégias dos jogadores.</li>
+            </ul>
+            <p>Atenção, ao aceitar uma solicitação de Selo Verde ele não é aplicado automaticamente, você deverá aplicar manualmente.</p>
+            <figure>
+                <img src="assets/telas_jogo/tela_fiscal.png" alt="" id="tela">
+                <figcaption>Interface do Fiscal</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/telas_jogo/tela_fiscal_acoes.png" alt="" id="tela">
+                <figcaption>Interface de multas</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/telas_jogo/tela_fiscal_acoes2.png" alt="" id="tela">
+                <figcaption>Interface de selo verde</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/telas_jogo/tela_fiscal_seloverde.png" alt="" id="tela">
+                <figcaption>Solicitações de Selo Verde</figcaption>
             </figure>
         </article>
     </main>
     <aside>
         <ol>
             <h3>MENU</h3>
-            <a href="#um"><li>Personagens</li></a>
-            <a href="#dois"><li>Mundo</li></a>
-            <a href="#"><li>Etapas</li></a>
-            <a href="#"><li>Eleições</li></a>
+            <a href="#rodadas"><li>Rodadas</li></a>
+            <ol id="personagens">
+                <li>Eleições</li>
+            </ol>
+            <a href="#transferencias"><li>Transferências</li></a>
+            <a href="#personagens"><li>Personagens</li></a>
+            <ol id="personagens">
+                <a href="#agricultores"><li>Agricultor</li></a>
+                <a href="#empresarios"><li>Empresário</li></a>
+                <a href="#prefeito"><li>Prefeito</li></a>
+                <a href="#vereador"><li>Vereador</li></a>
+                <a href="#fiscal"><li>Fiscal Ambiental</li></a>
+            </ol>
+            <!-- <a href="#"><li>Eleições</li></a> -->
             <a href="#"><li>Objetivos</li></a>
-            <a href="#"><li>Poluição</li></a>
+            <!-- <a href="#"><li><b style="color: red">Poluição</b></li></a> -->
         </ol>
     </aside>
 </div>
