@@ -11,17 +11,9 @@
         
         $(document).ready(function(){
             $('#dinamica').zoom({ on:'press' });
+            // $('#dinamica').css("overflow","visible")
         });
-    
-        // Using Colorbox with Zoom
-        // $(document).ready(function () {
-        //     $('a.photo').zoom({
-        //         url: 'photo-big.jpg',
-        //         callback: function () {
-        //             $(this).colorbox({ href: this.src });
-        //         }
-        //     });
-        // });
+
     </script>
 </head>
 <body>
@@ -30,12 +22,10 @@
     </div>
     <div class="menu" id="menu">
         <menu>
-            <a href="#intro"><li>introdução</li></a>
             <a href="#rodadas"><li>rodadas</li></a>
             <a href="#transferencias"><li>transferências</li></a>
             <a href="#personagens"><li>personagens</li></a>
-            <a href="#"><li>objetivos</li></a>
-            <!-- <a href="#"><li><b style="color: red">poluição</b></li></a> -->
+            <a href="#tabelas"><li>tabelas</li></a>
         </menu>
     </div>
     <div class="conteudo">
@@ -50,22 +40,36 @@
                 <li>Quatro jogadores assumem o papel de Empresários (Semente, Fertilizante, Máquinas ou Agrotóxico), enquanto os outros são Agricultores.</li>
                 <li>Os Empresários de Semente e Máquinas ficam em Atlantis, e os de Fertilizante e Agrotóxico ficam em Cidadela.</li>
             </ul>
+            <h4>Objetivo</h4>
+            <p>Os jogadores têm um objetivo principal: buscar o equilíbrio ambiental enquanto administram suas atividades econômicas. O jogo é uma simulação que visa provocar reflexões sobre as consequências das decisões no contexto ambiental e econômico. </p>
             <p>Observe as interações entre as classes, planeje suas jogadas, negociações e ações para influenciar positivamente o resultado final.</p>
-            <p style="background-color: rgb(184, 1, 1); color: white;">Atenção! Após fazer suas jogadas, comunique o mestre do jogo através do chat que você está pronto para ir para a próxima etapa!</p>
+            <figure>
+                <img src="assets/telas_jogo/tela_inicial.png" alt="" id="tela">
+                <figcaption>Interface inicial</figcaption>
+            </figure>     
+            <h4>Game Over</h4>
+            <p>O jogo tem uma condição de término quando atinge <b>100% de Poluição Mundial.</b> Isso representa um cenário em que os danos ambientais causados pelas ações dos jogadores alcançaram um nível crítico, afetando negativamente a produtividade e a viabilidade econômica. Com o aumento da poluição, a produtividade dos jogadores diminui, simulando a infertilidade do solo, impurezas na água e no ar, prejudicando a produção e a economia.</p>
+            
             
             <h2 id="rodadas">RODADAS</h2>
             <p>
                 Cada rodada equivale a um ano e possui duas etapas: produtores e fiscalizadores/moderadores.
                 Na primeira etapa, Empresários e Agricultores interagem; na segunda, Fiscais, Prefeitos e Vereadores entram em cena.
             </p>
+            <div id="images_rodada">
+                <img src="assets/dinamicaRodada.png" alt="">
+                <span id="dinamica">
+                <img src="assets/dinamicaJogo.png" alt="">
+                </span>
+                </div>
+            <p style="background-color: rgb(184, 1, 1); color: white;">Atenção! Após fazer suas jogadas, comunique o mestre do jogo através do chat que você está pronto para ir para a próxima etapa!</p>
             <h3>Eleições</h3>
             <p>Na dinâmica do jogo Gorim, a eleição é um momento crucial que ocorre a cada <b>duas rodadas</b>, ou seja, a primeira eleição ocorrerá na 3ª rodada, e permite a escolha de jogadores para desempenhar papéis-chave no cenário do jogo. As eleições determinam quem ocupará os cargos elegíveis de Fiscal Ambiental, Prefeito e Vereador em cada cidade (Atlantis e Cidadela).</p>
-            <div id="images_rodada">
-            <img src="assets/dinamicaRodada.png" alt="">
-            <span id="dinamica">
-            <img src="assets/dinamicaJogo.png" alt="">
-            </span>
-            </div>
+            <figure>
+                <img src="assets/telas_jogo/tela_votacao.png" alt="" id="tela">
+                <figcaption>Aparecerá um novo campo na interface para a votação</figcaption>
+            </figure>  
+
 
             <h2 id="transferencias">TRANSFERÊNCIAS</h2>
             <p>A transferência de dinheiro entre jogadores é uma mecânica que permite a movimentação de recursos financeiros entre os participantes. Essa possibilidade de transferência é uma ferramenta estratégica que pode ser utilizada para diversos fins ao longo do jogo, sendo alguns deles:</p>
@@ -80,12 +84,12 @@
 
 
             <h3 id="agricultores">Agricultores</h3>
-            <p>No Gorim, o Agricultor desempenha um papel crucial na gestão ambiental e na <b style="color: green;"></b>produtividade</b> agrícola. Ele é responsável por <b>seis parcelas de terra</b> e suas principais ações incluem:</p>
+            <p>No Gorim, o Agricultor desempenha um papel crucial na gestão ambiental e na <b style="color: green;"></b><b style="color: green;"></b>produtividade</b></b> agrícola. Ele é responsável por <b>seis parcelas de terra</b> e suas principais ações incluem:</p>
             <h4>Plantio:</h4>
             <ul>
                 <li>O Agricultor pode escolher plantar em todas ou algumas das seis parcelas de terra.</li>
                 <li>Em cada parcela, ele pode plantar diferentes produtos: sementes, utilizar fertilizantes, agrotóxicos ou máquinas. No entanto, <b>não é possível usar agrotóxico e máquina na mesma parcela, com exceção do Pulverizador</b>, que reduz pela metade a <b style="color: red">poluição</b> daquela área.</li>
-                <li>Cada combinação de cultivo gera uma <b style="color: green;">produtividade</b> e impacto de<b style="color: red"> poluição</b> específicos.</li>
+                <li>Cada combinação de cultivo gera uma <b style="color: green;">produtividade</b> e impacto de<b style="color: red"> <b style="color: red">poluição</b></b> específicos.</li>
             </ul>
             <h4>Impacto nos Recursos Naturais:</h4>
             <ul>
@@ -104,10 +108,7 @@
                 <img src="assets/telas_jogo/tela_agricultor_parcela.png" alt="" id="tela">
                 <figcaption>Configurações das parcelas de terra</figcaption>
             </figure>
-            <figure>
-                <img src="assets/tabelas/tabelaAgricultor.png" alt="" id="tabela">
-                <figcaption>Tabela contendo informações importantes para o Agricultor</figcaption>
-            </figure>
+
             
             
             <h3 id="empresarios">Empresários</h3>
@@ -160,12 +161,12 @@
             <p>O Prefeito é um dos agentes principais na tomada de decisões ambientais e políticas da cidade. Suas atividades incluem:</p>
             <h4>Controle da Poluição Mundial:</h4>
             <ul>
-                <li>Tem a responsabilidade de controlar a poluição mundial através de ações específicas.</li>
-                <li>Pode utilizar três diferentes ações ambientais: Tratamento de Água, Lixo e Esgoto, cada uma com um preço e impacto na poluição mundial.</li>
+                <li>Tem a responsabilidade de controlar a <b style="color: red">poluição</b> mundial através de ações específicas.</li>
+                <li>Pode utilizar três diferentes ações ambientais: Tratamento de Água, Lixo e Esgoto, cada uma com um preço e impacto na <b style="color: red">poluição</b> mundial.</li>
             </ul>
             <h4>Gestão de Impostos:</h4>
             <ul>
-                <li>Tem o poder de aumentar ou diminuir o preço dos impostos, que são divididos em três tipos. Esses impostos têm diferentes taxas de preço para faixas de produtividade.</li>
+                <li>Tem o poder de aumentar ou diminuir o preço dos impostos, que são divididos em três tipos. Esses impostos têm diferentes taxas de preço para faixas de <b style="color: green;">produtividade</b>.</li>
             </ul>
             <h4>Aconselhamento e Estratégia:</h4>
             <ul>
@@ -225,7 +226,7 @@
             <h4>Controle da Poluição Local:</h4>
             <ul>
                 <li>É responsável por dar ou retirar o Selo Verde das parcelas dos Agricultores.</li>
-                <li>Contribui para o controle da poluição local e para as estratégias dos jogadores.</li>
+                <li>Contribui para o controle da <b style="color: red">poluição</b> local e para as estratégias dos jogadores.</li>
             </ul>
             <p>Atenção, ao aceitar uma solicitação de Selo Verde ele não é aplicado automaticamente, você deverá aplicar manualmente.</p>
             <figure>
@@ -244,6 +245,42 @@
                 <img src="assets/telas_jogo/tela_fiscal_seloverde.png" alt="" id="tela">
                 <figcaption>Solicitações de Selo Verde</figcaption>
             </figure>
+
+
+            <h2 id="tabelas">TABELAS</h2>
+            <p>As tabelas com valores das ações são elementos essenciais no jogo Gorim, fornecendo informações cruciais para os jogadores tomarem decisões estratégicas. Elas contêm dados relevantes sobre preços, custos, impactos ambientais e econômicos das ações realizadas no jogo. Cada papel tem acesso a tabelas relevantes para a sua função. Clique em <b>"Tabelas de Valores"</b> para ter acesso.</p>
+            <p id="tprodutos"><b>Preço dos Produtos:</b> Valores dos diferentes tipos de sementes, fertilizantes, agrotóxicos e máquinas disponíveis para venda.</p>
+            <div id="images_rodada">
+                <img src="assets/tabelas/tabela_produtos1.png" alt="">
+                <img src="assets/tabelas/tabela_produtos2.png" alt="" style="width: 23vw;">
+            </div>
+            <p id="tprodpoluicao"><b>Produtividade e Poluição:</b> Informações sobre como diferentes combinações de produtos utilizados pelos Agricultores afetam a <b style="color: green;">produtividade</b> das colheitas e a quantidade de <b style="color: red">poluição</b> gerada.</p>
+            <div id="images_rodada">
+                <img src="assets/tabelas/tabela_produtividade1.png" alt="">
+                <img src="assets/tabelas/tabela_produtividade2.png" alt="" style="width: 24vw;">
+                <img src="assets/tabelas/tabela_poluicao.png" alt="" style="padding-top: 15px;">
+            </div>
+            <p id="tmultasimpostos"><b>Multas e Impostos:</b> Indicação dos benefícios do Selo Verde (desconto no imposto sobre a <b style="color: green;">produtividade</b> da parcela) e a definição das taxas de impostos e eventuais multas a serem pagas.</p>
+            <div id="images_rodada">
+                <img src="assets/tabelas/tabela_multas.png" alt="">
+                <img src="assets/tabelas/tabela_impostos.png" alt="">
+            </div>
+            <p id="tprodxpoluicao"><b>Produtividade x Poluição Mundial:</b> Correlaciona a <b style="color: green;">produtividade</b> gerada pelos jogadores com os níveis de <b style="color: red">poluição</b> global. Essa tabela é crucial para entender como as ações individuais dos jogadores afetam não apenas a economia do jogo, mas também o meio ambiente global.</p>
+            <div id="images_rodada">
+                <img src="assets/tabelas/tabela_prodxpoluicao.png" alt="">
+            </div>
+            <p id="tvalores"><b>Valores dos produtos e poluição gerada:</b> Valores dos produtos vendidos pelos empresários e a <b style="color: red">poluição</b> gerada por cada venda.</p>
+            <div id="images_rodada">
+                <img src="assets/tabelas/tabela_prodmaq.png" alt="">
+                <img src="assets/tabelas/tabela_prodagrotoxicos.png" alt="">
+                <img src="assets/tabelas/tabela_prodfert.png" alt="" style="padding-top: 15px;">
+                <img src="assets/tabelas/tabela_prodsem.png" alt="" style="padding-top: 15px;">
+            </div>
+            <p id="tacoes"><b>Custos das Ações:</b>Valores relativos às ações ambientais disponíveis para os Prefeitos (Tratamento de Água, Lixo e Esgoto) e seus impactos na <b style="color: red">poluição</b>.</p>
+            <div id="images_rodada">
+                <img src="assets/tabelas/tabela_acoes.png" alt="">
+               
+            </div>
         </article>
     </main>
     <aside>
@@ -251,7 +288,7 @@
             <h3>MENU</h3>
             <a href="#rodadas"><li>Rodadas</li></a>
             <ol id="personagens">
-                <li>Eleições</li>
+                <a href="#eleicoes"><li>Eleições</li></a>
             </ol>
             <a href="#transferencias"><li>Transferências</li></a>
             <a href="#personagens"><li>Personagens</li></a>
@@ -262,9 +299,16 @@
                 <a href="#vereador"><li>Vereador</li></a>
                 <a href="#fiscal"><li>Fiscal Ambiental</li></a>
             </ol>
-            <!-- <a href="#"><li>Eleições</li></a> -->
-            <a href="#"><li>Objetivos</li></a>
-            <!-- <a href="#"><li><b style="color: red">Poluição</b></li></a> -->
+            <a href="#tabelas"><li>Tabelas</li></a>
+            <ol id="personagens">
+                <a href="#tprodutos"><li>Preço dos produtos</li></a>
+                <a href="#tprodpoluicao"><li>Produtividade e poluição</li></a>
+                <a href="#tmultasimpostos"><li>Multas e Impostos</li></a>
+                <a href="#tprodxpoluicao"><li>Produtividade x Poluição Mundial</li></a>
+                <a href="#tvalores"><li>Valores dos produtos e poluição gerada:</li></a>
+                <a href="#tacoes"><li>Custos das Ações:</li></a>
+
+            </ol>
         </ol>
     </aside>
 </div>
