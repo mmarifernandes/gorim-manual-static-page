@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
-#icon{
+#inicio{
     width: 50vw;
 }
 body{
@@ -104,15 +104,25 @@ footer{
     width: 100%;
     text-align: center;
     display: flex;
-    background-color: #d0d0d0;
+    background-color: rgb(107 157 152);
     height: 25vh;
     justify-content: center;
     margin: 0 !important;
     box-shadow: 0px 4px 10.9px -4px rgba(0, 0, 0, 0.09);
     padding-top: 5vh;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    color: white;
+    font-size: 14px;
 
 }
 
+footer img{
+    width: 8vw;
+    /* height: 23vh; */
+    padding: 30px;
+}
 aside li:hover{
     color: #FF9600;
 }
@@ -227,5 +237,10 @@ ol #personagens{
     }
     #images_rodada img{
         width: 80vw !important;
+    }
+    footer img{
+        width: 10vw;
+        /* height: auto; */
+        padding: 30px;
     }
   }
